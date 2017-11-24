@@ -1,13 +1,17 @@
-import declare from 'dojoBaseDeclare';
-import widgetBase from 'widgetBase';
+import {
+    defineWidget,
+    log,
+    runCallback,
+} from 'widget-base-helpers';
 
-import { log } from '@/helpers';
-const { packageName, version, widgetFolder } = config;
+export default defineWidget('Widget', false, {
 
-export default declare(`${packageName}.${widgetFolder}.Widget`, [widgetBase], {
-
-    _WIDGET_VERSION: version,
     _obj: null,
+
+    constructor() {
+        this.log = log.bind(this);
+        this.runCallback = runCallback.bind(this);
+    },
 
     postCreate() {
         log.call(this, 'postCreate', this._WIDGET_VERSION);

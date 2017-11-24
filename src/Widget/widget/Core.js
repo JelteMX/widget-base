@@ -6,8 +6,11 @@
     Switch this on and off by configuring widget.core : true/false in package.json
 */
 
-import { defineWidget } from '@/helpers/widget';
-import { log } from '@/helpers';
+import {
+    defineWidget,
+    log,
+    runCallback,
+} from 'widget-base-helpers';
 
 export default defineWidget('Core', false, {
 
@@ -16,7 +19,12 @@ export default defineWidget('Core', false, {
     // Internal properties
     _obj: null,
 
+    constructor() {
+        this.log = log.bind(this);
+        this.runCallback = runCallback.bind(this);
+    },
+
     postCreate() {
-        log.call(this, 'postCreate', this._WIDGET_VERSION);
+        this.log('postCreate', this._WIDGET_VERSION);
     },
 });

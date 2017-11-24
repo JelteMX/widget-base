@@ -66,5 +66,7 @@
     "webpack-strip-block": "^0.2.0",
     "xml-webpack-plugin": "^0.0.2"
   },
-  "dependencies": {}
+  "dependencies": {
+    "widget-base-helpers": "*"
+  }
 }
