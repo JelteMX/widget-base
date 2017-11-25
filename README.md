@@ -1,7 +1,7 @@
 Widget Base
 ===
 
-> *Note: this is work in progress and not production ready yet! Use at your own risk.*
+**Note: this widget is setup is part of the new Widget Generator. Easier to scaffold a new widget, it will set the names for you: [JelteMX/generator-mendix-widget](https://github.com/JelteMX/generator-mendix-widget)**
 
 This Mendix widget is generated through Webpack. It packs ES6 notation, ESLint and other techniques in one simple setup.
 
