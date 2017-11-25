@@ -26,7 +26,6 @@
     "es2015",
     "es6"
   ],
-  "author": "J.W. Lagendijk <jelte.lagendijk@mendix.com>",
   "license": "MIT",
   "devDependencies": {
     "autoprefixer": "^7.1.4",
