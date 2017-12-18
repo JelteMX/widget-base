@@ -68,6 +68,6 @@
     "xml-webpack-plugin": "^0.0.2"
   },
   "dependencies": {
-    "widget-base-helpers": "*"
+    "widget-base-helpers": "latest"
   }
 }
